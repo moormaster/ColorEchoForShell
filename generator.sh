@@ -29,7 +29,7 @@ fi
 
 echo.BoldGreen "ColorEcho generator start!"
 
-for shell in sh bash dash fish ksh tcsh zsh; do
+for shell in sh bash dash fish ksh tclsh tcsh wish zsh; do
   {
     echo.BoldYellow "Generating ColorEcho for ${shell} shell ..."
     # shell specify configs and tricks
@@ -38,6 +38,8 @@ for shell in sh bash dash fish ksh tcsh zsh; do
         fn='function '
         dot='.'
         echo='echo -e'
+        exec=
+        returnAsStdout=
         escape='\\'
         if='if '
         then='; then '
@@ -48,12 +50,18 @@ for shell in sh bash dash fish ksh tcsh zsh; do
   '
         endSym='
 }'
+        leftQuote='"'
+        rightQuote='"'
+        leftSquareBracket='['
         para='$*'
+        lolcatArgs=
         ;;
       "ksh")
         fn='function '
         dot=
         echo='echo -e'
+        exec=
+        returnAsStdout=
         escape='\\'
         if='if '
         then='; then '
@@ -64,12 +72,18 @@ for shell in sh bash dash fish ksh tcsh zsh; do
   '
         endSym='
 }'
+        leftQuote='"'
+        rightQuote='"'
+        leftSquareBracket='['
         para='$*'
+        lolcatArgs=
         ;;
       "fish")
         fn='function '
         dot='.'
         echo='echo -e'
+        exec=
+        returnAsStdout=
         escape='\\'
         if='if '
         then='; '
@@ -80,7 +94,11 @@ for shell in sh bash dash fish ksh tcsh zsh; do
   '
         endSym='
 end'
+        leftQuote='"'
+        rightQuote='"'
+        leftSquareBracket='['
         para='$argv'
+        lolcatArgs=
         ;;
       "tcsh")
         # tcsh does not support function declaration
@@ -88,6 +106,8 @@ end'
         fn='alias '
         dot='.'
         echo='echo'
+        exec=
+        returnAsStdout=
         escape='\'
         # tcsh cannot put if, then, else, endif in the same line
         # -> use && and || operators instead
@@ -98,13 +118,19 @@ end'
         brackets=
         startSym=" '"
         endSym="'"
+        leftQuote='"'
+        rightQuote='"'
+        leftSquareBracket='['
         para='\!*'
+        lolcatArgs=
         ;;
       "sh" | "dash")
         fn=
         dot=
         # shellcheck disable=SC2016
         echo='$ECHO'
+        exec=
+        returnAsStdout=
         escape='\\'
         if='if '
         then='; then '
@@ -115,7 +141,34 @@ end'
   '
         endSym='
 }'
+        leftQuote='"'
+        rightQuote='"'
+        leftSquareBracket='['
         para='$*'
+        lolcatArgs=
+        ;;
+      "tclsh" | "wish")
+        fn='proc '
+        dot='.'
+        echo='puts'
+        exec='exec '
+        returnAsStdout=' >@ stdout'
+        escape='\'
+        if='if { [catch {'
+        then='} ] == 0 } { '
+        else=' } else { '
+        endIf=' }'
+        brackets=' {argv}'
+        startSym=' {
+  '
+        endSym='
+}'
+        leftQuote='{'
+        rightQuote='}'
+        leftSquareBracket='\['
+        para='$argv'
+        # lolcat does not recognize tty when called from tclsh / wish
+        lolcatArgs=' -f'
         ;;
     esac
 
@@ -200,7 +253,7 @@ SH_ECHO
                 echo ""
                 printf "%s%s" "${echoFunction}" "${brackets}"
                 # write the code down
-                echo "${startSym}${echo} "'"'"${escape}033[${finalStyleCode}${code}${colorCode}m${para}${escape}033[m"'"'"${endSym}"
+                echo "${startSym}${echo} "'"'"${escape}033${leftSquareBracket}${finalStyleCode}${code}${colorCode}m${para}${escape}033${leftSquareBracket}m"'"'"${endSym}"
               } >> "${tempDist}"
             fi
           done
@@ -225,6 +278,12 @@ SH_ECHO
         # -> remove ' and replace [ and ] with quoted chars
         trCntrl='\[:cntrl:\]'
         ;;
+      "tclsh" | "wish")
+        ifCond='exec which lolcat 2> /dev/null'
+        # tclsh passes arguments as is to exec -> no quotes around
+        # in tclsh [...] is a special syntax -> use escaped square brackets
+        trCntrl='\[:cntrl:\]'
+        ;;
       *)
         ifCond='command -v lolcat > /dev/null 2>&1'
         trCntrl="'[:cntrl:]'"
@@ -232,13 +291,13 @@ SH_ECHO
     esac
 
     cat << LOLCAT >> "${tempDist}"
-${fnName}${startSym}${if}${ifCond}${then}echo "${para}" | lolcat${else}echo "${para}"${endIf}${endSym}
+${fnName}${startSym}${if}${ifCond}${then}${exec}echo "${para}" | lolcat${lolcatArgs}${returnAsStdout}${else}${exec}echo "${para}"${returnAsStdout}${endIf}${endSym}
 LOLCAT
 
     # echo.Reset to remove color code on output
     fnName="${fn}echo${dot}Reset${brackets}"
     cat << RESET >> "${tempDist}"
-${fnName}${startSym}echo ${para} | tr -d ${trCntrl} | sed -E "s/${escape}[((;)?[0-9]{1,3}){0,3}m//g"; echo${endSym}
+${fnName}${startSym}${exec}echo ${para} | tr -d ${trCntrl} | sed -E ${leftQuote}s/${escape}[((;)?[0-9]{1,3}){0,3}m//g${rightQuote}${returnAsStdout}; ${exec}echo${returnAsStdout}${endSym}
 RESET
     mv -f "${tempDist}" "${newDist}"
   } &

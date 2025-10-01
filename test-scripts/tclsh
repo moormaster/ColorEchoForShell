@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+set -e
+dir="$(cd "$(dirname "$0")" && pwd)"
+script="${dir}/../dist/ColorEcho.tclsh"
+
+{
+  echo "source \"${script}\""
+  awk '/^proc +echo/ {print $2}' "${script}" | sed 's/{\w\+}//g' | while IFS= read -r x; do
+    echo "${x} \"${x}\""
+  done
+  echo 'echo.Reset "\033\[31mRed and \033\[32m\x27green\x27\033\[m"'
+} | tclsh

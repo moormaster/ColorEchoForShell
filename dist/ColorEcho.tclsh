@@ -1,0 +1,2522 @@
+#!/usr/bin/env tclsh
+
+# ColorEchoForShell
+# https://github.com/PeterDaveHello/ColorEchoForShell
+# Copyright (C) 2015 ~ Peter Dave Hello
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or (at
+# your option) any later version.
+#
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+# General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307
+# USA.
+
+proc echo.Black {argv} {
+  puts "\033\[30m$argv\033\[m"
+}
+
+proc echo.BoldBlack {argv} {
+  puts "\033\[1;30m$argv\033\[m"
+}
+
+proc echo.IBlack {argv} {
+  puts "\033\[3;30m$argv\033\[m"
+}
+
+proc echo.ULBlack {argv} {
+  puts "\033\[4;30m$argv\033\[m"
+}
+
+proc echo.BLBlack {argv} {
+  puts "\033\[5;30m$argv\033\[m"
+}
+
+proc echo.STBlack {argv} {
+  puts "\033\[9;30m$argv\033\[m"
+}
+
+proc echo.BoldIBlack {argv} {
+  puts "\033\[1;3;30m$argv\033\[m"
+}
+
+proc echo.BoldULBlack {argv} {
+  puts "\033\[1;4;30m$argv\033\[m"
+}
+
+proc echo.BoldBLBlack {argv} {
+  puts "\033\[1;5;30m$argv\033\[m"
+}
+
+proc echo.BoldSTBlack {argv} {
+  puts "\033\[1;9;30m$argv\033\[m"
+}
+
+proc echo.IBoldBlack {argv} {
+  puts "\033\[3;1;30m$argv\033\[m"
+}
+
+proc echo.IULBlack {argv} {
+  puts "\033\[3;4;30m$argv\033\[m"
+}
+
+proc echo.IBLBlack {argv} {
+  puts "\033\[3;5;30m$argv\033\[m"
+}
+
+proc echo.ISTBlack {argv} {
+  puts "\033\[3;9;30m$argv\033\[m"
+}
+
+proc echo.ULBoldBlack {argv} {
+  puts "\033\[4;1;30m$argv\033\[m"
+}
+
+proc echo.ULIBlack {argv} {
+  puts "\033\[4;3;30m$argv\033\[m"
+}
+
+proc echo.ULBLBlack {argv} {
+  puts "\033\[4;5;30m$argv\033\[m"
+}
+
+proc echo.ULSTBlack {argv} {
+  puts "\033\[4;9;30m$argv\033\[m"
+}
+
+proc echo.BLBoldBlack {argv} {
+  puts "\033\[5;1;30m$argv\033\[m"
+}
+
+proc echo.BLIBlack {argv} {
+  puts "\033\[5;3;30m$argv\033\[m"
+}
+
+proc echo.BLULBlack {argv} {
+  puts "\033\[5;4;30m$argv\033\[m"
+}
+
+proc echo.BLSTBlack {argv} {
+  puts "\033\[5;9;30m$argv\033\[m"
+}
+
+proc echo.STBoldBlack {argv} {
+  puts "\033\[9;1;30m$argv\033\[m"
+}
+
+proc echo.STIBlack {argv} {
+  puts "\033\[9;3;30m$argv\033\[m"
+}
+
+proc echo.STULBlack {argv} {
+  puts "\033\[9;4;30m$argv\033\[m"
+}
+
+proc echo.STBLBlack {argv} {
+  puts "\033\[9;5;30m$argv\033\[m"
+}
+
+proc echo.LightBlack {argv} {
+  puts "\033\[90m$argv\033\[m"
+}
+
+proc echo.LightBoldBlack {argv} {
+  puts "\033\[1;90m$argv\033\[m"
+}
+
+proc echo.LightIBlack {argv} {
+  puts "\033\[3;90m$argv\033\[m"
+}
+
+proc echo.LightULBlack {argv} {
+  puts "\033\[4;90m$argv\033\[m"
+}
+
+proc echo.LightBLBlack {argv} {
+  puts "\033\[5;90m$argv\033\[m"
+}
+
+proc echo.LightSTBlack {argv} {
+  puts "\033\[9;90m$argv\033\[m"
+}
+
+proc echo.LightBoldIBlack {argv} {
+  puts "\033\[1;3;90m$argv\033\[m"
+}
+
+proc echo.LightBoldULBlack {argv} {
+  puts "\033\[1;4;90m$argv\033\[m"
+}
+
+proc echo.LightBoldBLBlack {argv} {
+  puts "\033\[1;5;90m$argv\033\[m"
+}
+
+proc echo.LightBoldSTBlack {argv} {
+  puts "\033\[1;9;90m$argv\033\[m"
+}
+
+proc echo.LightIBoldBlack {argv} {
+  puts "\033\[3;1;90m$argv\033\[m"
+}
+
+proc echo.LightIULBlack {argv} {
+  puts "\033\[3;4;90m$argv\033\[m"
+}
+
+proc echo.LightIBLBlack {argv} {
+  puts "\033\[3;5;90m$argv\033\[m"
+}
+
+proc echo.LightISTBlack {argv} {
+  puts "\033\[3;9;90m$argv\033\[m"
+}
+
+proc echo.LightULBoldBlack {argv} {
+  puts "\033\[4;1;90m$argv\033\[m"
+}
+
+proc echo.LightULIBlack {argv} {
+  puts "\033\[4;3;90m$argv\033\[m"
+}
+
+proc echo.LightULBLBlack {argv} {
+  puts "\033\[4;5;90m$argv\033\[m"
+}
+
+proc echo.LightULSTBlack {argv} {
+  puts "\033\[4;9;90m$argv\033\[m"
+}
+
+proc echo.LightBLBoldBlack {argv} {
+  puts "\033\[5;1;90m$argv\033\[m"
+}
+
+proc echo.LightBLIBlack {argv} {
+  puts "\033\[5;3;90m$argv\033\[m"
+}
+
+proc echo.LightBLULBlack {argv} {
+  puts "\033\[5;4;90m$argv\033\[m"
+}
+
+proc echo.LightBLSTBlack {argv} {
+  puts "\033\[5;9;90m$argv\033\[m"
+}
+
+proc echo.LightSTBoldBlack {argv} {
+  puts "\033\[9;1;90m$argv\033\[m"
+}
+
+proc echo.LightSTIBlack {argv} {
+  puts "\033\[9;3;90m$argv\033\[m"
+}
+
+proc echo.LightSTULBlack {argv} {
+  puts "\033\[9;4;90m$argv\033\[m"
+}
+
+proc echo.LightSTBLBlack {argv} {
+  puts "\033\[9;5;90m$argv\033\[m"
+}
+
+proc echo.Red {argv} {
+  puts "\033\[31m$argv\033\[m"
+}
+
+proc echo.BoldRed {argv} {
+  puts "\033\[1;31m$argv\033\[m"
+}
+
+proc echo.IRed {argv} {
+  puts "\033\[3;31m$argv\033\[m"
+}
+
+proc echo.ULRed {argv} {
+  puts "\033\[4;31m$argv\033\[m"
+}
+
+proc echo.BLRed {argv} {
+  puts "\033\[5;31m$argv\033\[m"
+}
+
+proc echo.STRed {argv} {
+  puts "\033\[9;31m$argv\033\[m"
+}
+
+proc echo.BoldIRed {argv} {
+  puts "\033\[1;3;31m$argv\033\[m"
+}
+
+proc echo.BoldULRed {argv} {
+  puts "\033\[1;4;31m$argv\033\[m"
+}
+
+proc echo.BoldBLRed {argv} {
+  puts "\033\[1;5;31m$argv\033\[m"
+}
+
+proc echo.BoldSTRed {argv} {
+  puts "\033\[1;9;31m$argv\033\[m"
+}
+
+proc echo.IBoldRed {argv} {
+  puts "\033\[3;1;31m$argv\033\[m"
+}
+
+proc echo.IULRed {argv} {
+  puts "\033\[3;4;31m$argv\033\[m"
+}
+
+proc echo.IBLRed {argv} {
+  puts "\033\[3;5;31m$argv\033\[m"
+}
+
+proc echo.ISTRed {argv} {
+  puts "\033\[3;9;31m$argv\033\[m"
+}
+
+proc echo.ULBoldRed {argv} {
+  puts "\033\[4;1;31m$argv\033\[m"
+}
+
+proc echo.ULIRed {argv} {
+  puts "\033\[4;3;31m$argv\033\[m"
+}
+
+proc echo.ULBLRed {argv} {
+  puts "\033\[4;5;31m$argv\033\[m"
+}
+
+proc echo.ULSTRed {argv} {
+  puts "\033\[4;9;31m$argv\033\[m"
+}
+
+proc echo.BLBoldRed {argv} {
+  puts "\033\[5;1;31m$argv\033\[m"
+}
+
+proc echo.BLIRed {argv} {
+  puts "\033\[5;3;31m$argv\033\[m"
+}
+
+proc echo.BLULRed {argv} {
+  puts "\033\[5;4;31m$argv\033\[m"
+}
+
+proc echo.BLSTRed {argv} {
+  puts "\033\[5;9;31m$argv\033\[m"
+}
+
+proc echo.STBoldRed {argv} {
+  puts "\033\[9;1;31m$argv\033\[m"
+}
+
+proc echo.STIRed {argv} {
+  puts "\033\[9;3;31m$argv\033\[m"
+}
+
+proc echo.STULRed {argv} {
+  puts "\033\[9;4;31m$argv\033\[m"
+}
+
+proc echo.STBLRed {argv} {
+  puts "\033\[9;5;31m$argv\033\[m"
+}
+
+proc echo.LightRed {argv} {
+  puts "\033\[91m$argv\033\[m"
+}
+
+proc echo.LightBoldRed {argv} {
+  puts "\033\[1;91m$argv\033\[m"
+}
+
+proc echo.LightIRed {argv} {
+  puts "\033\[3;91m$argv\033\[m"
+}
+
+proc echo.LightULRed {argv} {
+  puts "\033\[4;91m$argv\033\[m"
+}
+
+proc echo.LightBLRed {argv} {
+  puts "\033\[5;91m$argv\033\[m"
+}
+
+proc echo.LightSTRed {argv} {
+  puts "\033\[9;91m$argv\033\[m"
+}
+
+proc echo.LightBoldIRed {argv} {
+  puts "\033\[1;3;91m$argv\033\[m"
+}
+
+proc echo.LightBoldULRed {argv} {
+  puts "\033\[1;4;91m$argv\033\[m"
+}
+
+proc echo.LightBoldBLRed {argv} {
+  puts "\033\[1;5;91m$argv\033\[m"
+}
+
+proc echo.LightBoldSTRed {argv} {
+  puts "\033\[1;9;91m$argv\033\[m"
+}
+
+proc echo.LightIBoldRed {argv} {
+  puts "\033\[3;1;91m$argv\033\[m"
+}
+
+proc echo.LightIULRed {argv} {
+  puts "\033\[3;4;91m$argv\033\[m"
+}
+
+proc echo.LightIBLRed {argv} {
+  puts "\033\[3;5;91m$argv\033\[m"
+}
+
+proc echo.LightISTRed {argv} {
+  puts "\033\[3;9;91m$argv\033\[m"
+}
+
+proc echo.LightULBoldRed {argv} {
+  puts "\033\[4;1;91m$argv\033\[m"
+}
+
+proc echo.LightULIRed {argv} {
+  puts "\033\[4;3;91m$argv\033\[m"
+}
+
+proc echo.LightULBLRed {argv} {
+  puts "\033\[4;5;91m$argv\033\[m"
+}
+
+proc echo.LightULSTRed {argv} {
+  puts "\033\[4;9;91m$argv\033\[m"
+}
+
+proc echo.LightBLBoldRed {argv} {
+  puts "\033\[5;1;91m$argv\033\[m"
+}
+
+proc echo.LightBLIRed {argv} {
+  puts "\033\[5;3;91m$argv\033\[m"
+}
+
+proc echo.LightBLULRed {argv} {
+  puts "\033\[5;4;91m$argv\033\[m"
+}
+
+proc echo.LightBLSTRed {argv} {
+  puts "\033\[5;9;91m$argv\033\[m"
+}
+
+proc echo.LightSTBoldRed {argv} {
+  puts "\033\[9;1;91m$argv\033\[m"
+}
+
+proc echo.LightSTIRed {argv} {
+  puts "\033\[9;3;91m$argv\033\[m"
+}
+
+proc echo.LightSTULRed {argv} {
+  puts "\033\[9;4;91m$argv\033\[m"
+}
+
+proc echo.LightSTBLRed {argv} {
+  puts "\033\[9;5;91m$argv\033\[m"
+}
+
+proc echo.Green {argv} {
+  puts "\033\[32m$argv\033\[m"
+}
+
+proc echo.BoldGreen {argv} {
+  puts "\033\[1;32m$argv\033\[m"
+}
+
+proc echo.IGreen {argv} {
+  puts "\033\[3;32m$argv\033\[m"
+}
+
+proc echo.ULGreen {argv} {
+  puts "\033\[4;32m$argv\033\[m"
+}
+
+proc echo.BLGreen {argv} {
+  puts "\033\[5;32m$argv\033\[m"
+}
+
+proc echo.STGreen {argv} {
+  puts "\033\[9;32m$argv\033\[m"
+}
+
+proc echo.BoldIGreen {argv} {
+  puts "\033\[1;3;32m$argv\033\[m"
+}
+
+proc echo.BoldULGreen {argv} {
+  puts "\033\[1;4;32m$argv\033\[m"
+}
+
+proc echo.BoldBLGreen {argv} {
+  puts "\033\[1;5;32m$argv\033\[m"
+}
+
+proc echo.BoldSTGreen {argv} {
+  puts "\033\[1;9;32m$argv\033\[m"
+}
+
+proc echo.IBoldGreen {argv} {
+  puts "\033\[3;1;32m$argv\033\[m"
+}
+
+proc echo.IULGreen {argv} {
+  puts "\033\[3;4;32m$argv\033\[m"
+}
+
+proc echo.IBLGreen {argv} {
+  puts "\033\[3;5;32m$argv\033\[m"
+}
+
+proc echo.ISTGreen {argv} {
+  puts "\033\[3;9;32m$argv\033\[m"
+}
+
+proc echo.ULBoldGreen {argv} {
+  puts "\033\[4;1;32m$argv\033\[m"
+}
+
+proc echo.ULIGreen {argv} {
+  puts "\033\[4;3;32m$argv\033\[m"
+}
+
+proc echo.ULBLGreen {argv} {
+  puts "\033\[4;5;32m$argv\033\[m"
+}
+
+proc echo.ULSTGreen {argv} {
+  puts "\033\[4;9;32m$argv\033\[m"
+}
+
+proc echo.BLBoldGreen {argv} {
+  puts "\033\[5;1;32m$argv\033\[m"
+}
+
+proc echo.BLIGreen {argv} {
+  puts "\033\[5;3;32m$argv\033\[m"
+}
+
+proc echo.BLULGreen {argv} {
+  puts "\033\[5;4;32m$argv\033\[m"
+}
+
+proc echo.BLSTGreen {argv} {
+  puts "\033\[5;9;32m$argv\033\[m"
+}
+
+proc echo.STBoldGreen {argv} {
+  puts "\033\[9;1;32m$argv\033\[m"
+}
+
+proc echo.STIGreen {argv} {
+  puts "\033\[9;3;32m$argv\033\[m"
+}
+
+proc echo.STULGreen {argv} {
+  puts "\033\[9;4;32m$argv\033\[m"
+}
+
+proc echo.STBLGreen {argv} {
+  puts "\033\[9;5;32m$argv\033\[m"
+}
+
+proc echo.LightGreen {argv} {
+  puts "\033\[92m$argv\033\[m"
+}
+
+proc echo.LightBoldGreen {argv} {
+  puts "\033\[1;92m$argv\033\[m"
+}
+
+proc echo.LightIGreen {argv} {
+  puts "\033\[3;92m$argv\033\[m"
+}
+
+proc echo.LightULGreen {argv} {
+  puts "\033\[4;92m$argv\033\[m"
+}
+
+proc echo.LightBLGreen {argv} {
+  puts "\033\[5;92m$argv\033\[m"
+}
+
+proc echo.LightSTGreen {argv} {
+  puts "\033\[9;92m$argv\033\[m"
+}
+
+proc echo.LightBoldIGreen {argv} {
+  puts "\033\[1;3;92m$argv\033\[m"
+}
+
+proc echo.LightBoldULGreen {argv} {
+  puts "\033\[1;4;92m$argv\033\[m"
+}
+
+proc echo.LightBoldBLGreen {argv} {
+  puts "\033\[1;5;92m$argv\033\[m"
+}
+
+proc echo.LightBoldSTGreen {argv} {
+  puts "\033\[1;9;92m$argv\033\[m"
+}
+
+proc echo.LightIBoldGreen {argv} {
+  puts "\033\[3;1;92m$argv\033\[m"
+}
+
+proc echo.LightIULGreen {argv} {
+  puts "\033\[3;4;92m$argv\033\[m"
+}
+
+proc echo.LightIBLGreen {argv} {
+  puts "\033\[3;5;92m$argv\033\[m"
+}
+
+proc echo.LightISTGreen {argv} {
+  puts "\033\[3;9;92m$argv\033\[m"
+}
+
+proc echo.LightULBoldGreen {argv} {
+  puts "\033\[4;1;92m$argv\033\[m"
+}
+
+proc echo.LightULIGreen {argv} {
+  puts "\033\[4;3;92m$argv\033\[m"
+}
+
+proc echo.LightULBLGreen {argv} {
+  puts "\033\[4;5;92m$argv\033\[m"
+}
+
+proc echo.LightULSTGreen {argv} {
+  puts "\033\[4;9;92m$argv\033\[m"
+}
+
+proc echo.LightBLBoldGreen {argv} {
+  puts "\033\[5;1;92m$argv\033\[m"
+}
+
+proc echo.LightBLIGreen {argv} {
+  puts "\033\[5;3;92m$argv\033\[m"
+}
+
+proc echo.LightBLULGreen {argv} {
+  puts "\033\[5;4;92m$argv\033\[m"
+}
+
+proc echo.LightBLSTGreen {argv} {
+  puts "\033\[5;9;92m$argv\033\[m"
+}
+
+proc echo.LightSTBoldGreen {argv} {
+  puts "\033\[9;1;92m$argv\033\[m"
+}
+
+proc echo.LightSTIGreen {argv} {
+  puts "\033\[9;3;92m$argv\033\[m"
+}
+
+proc echo.LightSTULGreen {argv} {
+  puts "\033\[9;4;92m$argv\033\[m"
+}
+
+proc echo.LightSTBLGreen {argv} {
+  puts "\033\[9;5;92m$argv\033\[m"
+}
+
+proc echo.Yellow {argv} {
+  puts "\033\[33m$argv\033\[m"
+}
+
+proc echo.BoldYellow {argv} {
+  puts "\033\[1;33m$argv\033\[m"
+}
+
+proc echo.IYellow {argv} {
+  puts "\033\[3;33m$argv\033\[m"
+}
+
+proc echo.ULYellow {argv} {
+  puts "\033\[4;33m$argv\033\[m"
+}
+
+proc echo.BLYellow {argv} {
+  puts "\033\[5;33m$argv\033\[m"
+}
+
+proc echo.STYellow {argv} {
+  puts "\033\[9;33m$argv\033\[m"
+}
+
+proc echo.BoldIYellow {argv} {
+  puts "\033\[1;3;33m$argv\033\[m"
+}
+
+proc echo.BoldULYellow {argv} {
+  puts "\033\[1;4;33m$argv\033\[m"
+}
+
+proc echo.BoldBLYellow {argv} {
+  puts "\033\[1;5;33m$argv\033\[m"
+}
+
+proc echo.BoldSTYellow {argv} {
+  puts "\033\[1;9;33m$argv\033\[m"
+}
+
+proc echo.IBoldYellow {argv} {
+  puts "\033\[3;1;33m$argv\033\[m"
+}
+
+proc echo.IULYellow {argv} {
+  puts "\033\[3;4;33m$argv\033\[m"
+}
+
+proc echo.IBLYellow {argv} {
+  puts "\033\[3;5;33m$argv\033\[m"
+}
+
+proc echo.ISTYellow {argv} {
+  puts "\033\[3;9;33m$argv\033\[m"
+}
+
+proc echo.ULBoldYellow {argv} {
+  puts "\033\[4;1;33m$argv\033\[m"
+}
+
+proc echo.ULIYellow {argv} {
+  puts "\033\[4;3;33m$argv\033\[m"
+}
+
+proc echo.ULBLYellow {argv} {
+  puts "\033\[4;5;33m$argv\033\[m"
+}
+
+proc echo.ULSTYellow {argv} {
+  puts "\033\[4;9;33m$argv\033\[m"
+}
+
+proc echo.BLBoldYellow {argv} {
+  puts "\033\[5;1;33m$argv\033\[m"
+}
+
+proc echo.BLIYellow {argv} {
+  puts "\033\[5;3;33m$argv\033\[m"
+}
+
+proc echo.BLULYellow {argv} {
+  puts "\033\[5;4;33m$argv\033\[m"
+}
+
+proc echo.BLSTYellow {argv} {
+  puts "\033\[5;9;33m$argv\033\[m"
+}
+
+proc echo.STBoldYellow {argv} {
+  puts "\033\[9;1;33m$argv\033\[m"
+}
+
+proc echo.STIYellow {argv} {
+  puts "\033\[9;3;33m$argv\033\[m"
+}
+
+proc echo.STULYellow {argv} {
+  puts "\033\[9;4;33m$argv\033\[m"
+}
+
+proc echo.STBLYellow {argv} {
+  puts "\033\[9;5;33m$argv\033\[m"
+}
+
+proc echo.LightYellow {argv} {
+  puts "\033\[93m$argv\033\[m"
+}
+
+proc echo.LightBoldYellow {argv} {
+  puts "\033\[1;93m$argv\033\[m"
+}
+
+proc echo.LightIYellow {argv} {
+  puts "\033\[3;93m$argv\033\[m"
+}
+
+proc echo.LightULYellow {argv} {
+  puts "\033\[4;93m$argv\033\[m"
+}
+
+proc echo.LightBLYellow {argv} {
+  puts "\033\[5;93m$argv\033\[m"
+}
+
+proc echo.LightSTYellow {argv} {
+  puts "\033\[9;93m$argv\033\[m"
+}
+
+proc echo.LightBoldIYellow {argv} {
+  puts "\033\[1;3;93m$argv\033\[m"
+}
+
+proc echo.LightBoldULYellow {argv} {
+  puts "\033\[1;4;93m$argv\033\[m"
+}
+
+proc echo.LightBoldBLYellow {argv} {
+  puts "\033\[1;5;93m$argv\033\[m"
+}
+
+proc echo.LightBoldSTYellow {argv} {
+  puts "\033\[1;9;93m$argv\033\[m"
+}
+
+proc echo.LightIBoldYellow {argv} {
+  puts "\033\[3;1;93m$argv\033\[m"
+}
+
+proc echo.LightIULYellow {argv} {
+  puts "\033\[3;4;93m$argv\033\[m"
+}
+
+proc echo.LightIBLYellow {argv} {
+  puts "\033\[3;5;93m$argv\033\[m"
+}
+
+proc echo.LightISTYellow {argv} {
+  puts "\033\[3;9;93m$argv\033\[m"
+}
+
+proc echo.LightULBoldYellow {argv} {
+  puts "\033\[4;1;93m$argv\033\[m"
+}
+
+proc echo.LightULIYellow {argv} {
+  puts "\033\[4;3;93m$argv\033\[m"
+}
+
+proc echo.LightULBLYellow {argv} {
+  puts "\033\[4;5;93m$argv\033\[m"
+}
+
+proc echo.LightULSTYellow {argv} {
+  puts "\033\[4;9;93m$argv\033\[m"
+}
+
+proc echo.LightBLBoldYellow {argv} {
+  puts "\033\[5;1;93m$argv\033\[m"
+}
+
+proc echo.LightBLIYellow {argv} {
+  puts "\033\[5;3;93m$argv\033\[m"
+}
+
+proc echo.LightBLULYellow {argv} {
+  puts "\033\[5;4;93m$argv\033\[m"
+}
+
+proc echo.LightBLSTYellow {argv} {
+  puts "\033\[5;9;93m$argv\033\[m"
+}
+
+proc echo.LightSTBoldYellow {argv} {
+  puts "\033\[9;1;93m$argv\033\[m"
+}
+
+proc echo.LightSTIYellow {argv} {
+  puts "\033\[9;3;93m$argv\033\[m"
+}
+
+proc echo.LightSTULYellow {argv} {
+  puts "\033\[9;4;93m$argv\033\[m"
+}
+
+proc echo.LightSTBLYellow {argv} {
+  puts "\033\[9;5;93m$argv\033\[m"
+}
+
+proc echo.Blue {argv} {
+  puts "\033\[34m$argv\033\[m"
+}
+
+proc echo.BoldBlue {argv} {
+  puts "\033\[1;34m$argv\033\[m"
+}
+
+proc echo.IBlue {argv} {
+  puts "\033\[3;34m$argv\033\[m"
+}
+
+proc echo.ULBlue {argv} {
+  puts "\033\[4;34m$argv\033\[m"
+}
+
+proc echo.BLBlue {argv} {
+  puts "\033\[5;34m$argv\033\[m"
+}
+
+proc echo.STBlue {argv} {
+  puts "\033\[9;34m$argv\033\[m"
+}
+
+proc echo.BoldIBlue {argv} {
+  puts "\033\[1;3;34m$argv\033\[m"
+}
+
+proc echo.BoldULBlue {argv} {
+  puts "\033\[1;4;34m$argv\033\[m"
+}
+
+proc echo.BoldBLBlue {argv} {
+  puts "\033\[1;5;34m$argv\033\[m"
+}
+
+proc echo.BoldSTBlue {argv} {
+  puts "\033\[1;9;34m$argv\033\[m"
+}
+
+proc echo.IBoldBlue {argv} {
+  puts "\033\[3;1;34m$argv\033\[m"
+}
+
+proc echo.IULBlue {argv} {
+  puts "\033\[3;4;34m$argv\033\[m"
+}
+
+proc echo.IBLBlue {argv} {
+  puts "\033\[3;5;34m$argv\033\[m"
+}
+
+proc echo.ISTBlue {argv} {
+  puts "\033\[3;9;34m$argv\033\[m"
+}
+
+proc echo.ULBoldBlue {argv} {
+  puts "\033\[4;1;34m$argv\033\[m"
+}
+
+proc echo.ULIBlue {argv} {
+  puts "\033\[4;3;34m$argv\033\[m"
+}
+
+proc echo.ULBLBlue {argv} {
+  puts "\033\[4;5;34m$argv\033\[m"
+}
+
+proc echo.ULSTBlue {argv} {
+  puts "\033\[4;9;34m$argv\033\[m"
+}
+
+proc echo.BLBoldBlue {argv} {
+  puts "\033\[5;1;34m$argv\033\[m"
+}
+
+proc echo.BLIBlue {argv} {
+  puts "\033\[5;3;34m$argv\033\[m"
+}
+
+proc echo.BLULBlue {argv} {
+  puts "\033\[5;4;34m$argv\033\[m"
+}
+
+proc echo.BLSTBlue {argv} {
+  puts "\033\[5;9;34m$argv\033\[m"
+}
+
+proc echo.STBoldBlue {argv} {
+  puts "\033\[9;1;34m$argv\033\[m"
+}
+
+proc echo.STIBlue {argv} {
+  puts "\033\[9;3;34m$argv\033\[m"
+}
+
+proc echo.STULBlue {argv} {
+  puts "\033\[9;4;34m$argv\033\[m"
+}
+
+proc echo.STBLBlue {argv} {
+  puts "\033\[9;5;34m$argv\033\[m"
+}
+
+proc echo.LightBlue {argv} {
+  puts "\033\[94m$argv\033\[m"
+}
+
+proc echo.LightBoldBlue {argv} {
+  puts "\033\[1;94m$argv\033\[m"
+}
+
+proc echo.LightIBlue {argv} {
+  puts "\033\[3;94m$argv\033\[m"
+}
+
+proc echo.LightULBlue {argv} {
+  puts "\033\[4;94m$argv\033\[m"
+}
+
+proc echo.LightBLBlue {argv} {
+  puts "\033\[5;94m$argv\033\[m"
+}
+
+proc echo.LightSTBlue {argv} {
+  puts "\033\[9;94m$argv\033\[m"
+}
+
+proc echo.LightBoldIBlue {argv} {
+  puts "\033\[1;3;94m$argv\033\[m"
+}
+
+proc echo.LightBoldULBlue {argv} {
+  puts "\033\[1;4;94m$argv\033\[m"
+}
+
+proc echo.LightBoldBLBlue {argv} {
+  puts "\033\[1;5;94m$argv\033\[m"
+}
+
+proc echo.LightBoldSTBlue {argv} {
+  puts "\033\[1;9;94m$argv\033\[m"
+}
+
+proc echo.LightIBoldBlue {argv} {
+  puts "\033\[3;1;94m$argv\033\[m"
+}
+
+proc echo.LightIULBlue {argv} {
+  puts "\033\[3;4;94m$argv\033\[m"
+}
+
+proc echo.LightIBLBlue {argv} {
+  puts "\033\[3;5;94m$argv\033\[m"
+}
+
+proc echo.LightISTBlue {argv} {
+  puts "\033\[3;9;94m$argv\033\[m"
+}
+
+proc echo.LightULBoldBlue {argv} {
+  puts "\033\[4;1;94m$argv\033\[m"
+}
+
+proc echo.LightULIBlue {argv} {
+  puts "\033\[4;3;94m$argv\033\[m"
+}
+
+proc echo.LightULBLBlue {argv} {
+  puts "\033\[4;5;94m$argv\033\[m"
+}
+
+proc echo.LightULSTBlue {argv} {
+  puts "\033\[4;9;94m$argv\033\[m"
+}
+
+proc echo.LightBLBoldBlue {argv} {
+  puts "\033\[5;1;94m$argv\033\[m"
+}
+
+proc echo.LightBLIBlue {argv} {
+  puts "\033\[5;3;94m$argv\033\[m"
+}
+
+proc echo.LightBLULBlue {argv} {
+  puts "\033\[5;4;94m$argv\033\[m"
+}
+
+proc echo.LightBLSTBlue {argv} {
+  puts "\033\[5;9;94m$argv\033\[m"
+}
+
+proc echo.LightSTBoldBlue {argv} {
+  puts "\033\[9;1;94m$argv\033\[m"
+}
+
+proc echo.LightSTIBlue {argv} {
+  puts "\033\[9;3;94m$argv\033\[m"
+}
+
+proc echo.LightSTULBlue {argv} {
+  puts "\033\[9;4;94m$argv\033\[m"
+}
+
+proc echo.LightSTBLBlue {argv} {
+  puts "\033\[9;5;94m$argv\033\[m"
+}
+
+proc echo.Magenta {argv} {
+  puts "\033\[35m$argv\033\[m"
+}
+
+proc echo.BoldMagenta {argv} {
+  puts "\033\[1;35m$argv\033\[m"
+}
+
+proc echo.IMagenta {argv} {
+  puts "\033\[3;35m$argv\033\[m"
+}
+
+proc echo.ULMagenta {argv} {
+  puts "\033\[4;35m$argv\033\[m"
+}
+
+proc echo.BLMagenta {argv} {
+  puts "\033\[5;35m$argv\033\[m"
+}
+
+proc echo.STMagenta {argv} {
+  puts "\033\[9;35m$argv\033\[m"
+}
+
+proc echo.BoldIMagenta {argv} {
+  puts "\033\[1;3;35m$argv\033\[m"
+}
+
+proc echo.BoldULMagenta {argv} {
+  puts "\033\[1;4;35m$argv\033\[m"
+}
+
+proc echo.BoldBLMagenta {argv} {
+  puts "\033\[1;5;35m$argv\033\[m"
+}
+
+proc echo.BoldSTMagenta {argv} {
+  puts "\033\[1;9;35m$argv\033\[m"
+}
+
+proc echo.IBoldMagenta {argv} {
+  puts "\033\[3;1;35m$argv\033\[m"
+}
+
+proc echo.IULMagenta {argv} {
+  puts "\033\[3;4;35m$argv\033\[m"
+}
+
+proc echo.IBLMagenta {argv} {
+  puts "\033\[3;5;35m$argv\033\[m"
+}
+
+proc echo.ISTMagenta {argv} {
+  puts "\033\[3;9;35m$argv\033\[m"
+}
+
+proc echo.ULBoldMagenta {argv} {
+  puts "\033\[4;1;35m$argv\033\[m"
+}
+
+proc echo.ULIMagenta {argv} {
+  puts "\033\[4;3;35m$argv\033\[m"
+}
+
+proc echo.ULBLMagenta {argv} {
+  puts "\033\[4;5;35m$argv\033\[m"
+}
+
+proc echo.ULSTMagenta {argv} {
+  puts "\033\[4;9;35m$argv\033\[m"
+}
+
+proc echo.BLBoldMagenta {argv} {
+  puts "\033\[5;1;35m$argv\033\[m"
+}
+
+proc echo.BLIMagenta {argv} {
+  puts "\033\[5;3;35m$argv\033\[m"
+}
+
+proc echo.BLULMagenta {argv} {
+  puts "\033\[5;4;35m$argv\033\[m"
+}
+
+proc echo.BLSTMagenta {argv} {
+  puts "\033\[5;9;35m$argv\033\[m"
+}
+
+proc echo.STBoldMagenta {argv} {
+  puts "\033\[9;1;35m$argv\033\[m"
+}
+
+proc echo.STIMagenta {argv} {
+  puts "\033\[9;3;35m$argv\033\[m"
+}
+
+proc echo.STULMagenta {argv} {
+  puts "\033\[9;4;35m$argv\033\[m"
+}
+
+proc echo.STBLMagenta {argv} {
+  puts "\033\[9;5;35m$argv\033\[m"
+}
+
+proc echo.LightMagenta {argv} {
+  puts "\033\[95m$argv\033\[m"
+}
+
+proc echo.LightBoldMagenta {argv} {
+  puts "\033\[1;95m$argv\033\[m"
+}
+
+proc echo.LightIMagenta {argv} {
+  puts "\033\[3;95m$argv\033\[m"
+}
+
+proc echo.LightULMagenta {argv} {
+  puts "\033\[4;95m$argv\033\[m"
+}
+
+proc echo.LightBLMagenta {argv} {
+  puts "\033\[5;95m$argv\033\[m"
+}
+
+proc echo.LightSTMagenta {argv} {
+  puts "\033\[9;95m$argv\033\[m"
+}
+
+proc echo.LightBoldIMagenta {argv} {
+  puts "\033\[1;3;95m$argv\033\[m"
+}
+
+proc echo.LightBoldULMagenta {argv} {
+  puts "\033\[1;4;95m$argv\033\[m"
+}
+
+proc echo.LightBoldBLMagenta {argv} {
+  puts "\033\[1;5;95m$argv\033\[m"
+}
+
+proc echo.LightBoldSTMagenta {argv} {
+  puts "\033\[1;9;95m$argv\033\[m"
+}
+
+proc echo.LightIBoldMagenta {argv} {
+  puts "\033\[3;1;95m$argv\033\[m"
+}
+
+proc echo.LightIULMagenta {argv} {
+  puts "\033\[3;4;95m$argv\033\[m"
+}
+
+proc echo.LightIBLMagenta {argv} {
+  puts "\033\[3;5;95m$argv\033\[m"
+}
+
+proc echo.LightISTMagenta {argv} {
+  puts "\033\[3;9;95m$argv\033\[m"
+}
+
+proc echo.LightULBoldMagenta {argv} {
+  puts "\033\[4;1;95m$argv\033\[m"
+}
+
+proc echo.LightULIMagenta {argv} {
+  puts "\033\[4;3;95m$argv\033\[m"
+}
+
+proc echo.LightULBLMagenta {argv} {
+  puts "\033\[4;5;95m$argv\033\[m"
+}
+
+proc echo.LightULSTMagenta {argv} {
+  puts "\033\[4;9;95m$argv\033\[m"
+}
+
+proc echo.LightBLBoldMagenta {argv} {
+  puts "\033\[5;1;95m$argv\033\[m"
+}
+
+proc echo.LightBLIMagenta {argv} {
+  puts "\033\[5;3;95m$argv\033\[m"
+}
+
+proc echo.LightBLULMagenta {argv} {
+  puts "\033\[5;4;95m$argv\033\[m"
+}
+
+proc echo.LightBLSTMagenta {argv} {
+  puts "\033\[5;9;95m$argv\033\[m"
+}
+
+proc echo.LightSTBoldMagenta {argv} {
+  puts "\033\[9;1;95m$argv\033\[m"
+}
+
+proc echo.LightSTIMagenta {argv} {
+  puts "\033\[9;3;95m$argv\033\[m"
+}
+
+proc echo.LightSTULMagenta {argv} {
+  puts "\033\[9;4;95m$argv\033\[m"
+}
+
+proc echo.LightSTBLMagenta {argv} {
+  puts "\033\[9;5;95m$argv\033\[m"
+}
+
+proc echo.Cyan {argv} {
+  puts "\033\[36m$argv\033\[m"
+}
+
+proc echo.BoldCyan {argv} {
+  puts "\033\[1;36m$argv\033\[m"
+}
+
+proc echo.ICyan {argv} {
+  puts "\033\[3;36m$argv\033\[m"
+}
+
+proc echo.ULCyan {argv} {
+  puts "\033\[4;36m$argv\033\[m"
+}
+
+proc echo.BLCyan {argv} {
+  puts "\033\[5;36m$argv\033\[m"
+}
+
+proc echo.STCyan {argv} {
+  puts "\033\[9;36m$argv\033\[m"
+}
+
+proc echo.BoldICyan {argv} {
+  puts "\033\[1;3;36m$argv\033\[m"
+}
+
+proc echo.BoldULCyan {argv} {
+  puts "\033\[1;4;36m$argv\033\[m"
+}
+
+proc echo.BoldBLCyan {argv} {
+  puts "\033\[1;5;36m$argv\033\[m"
+}
+
+proc echo.BoldSTCyan {argv} {
+  puts "\033\[1;9;36m$argv\033\[m"
+}
+
+proc echo.IBoldCyan {argv} {
+  puts "\033\[3;1;36m$argv\033\[m"
+}
+
+proc echo.IULCyan {argv} {
+  puts "\033\[3;4;36m$argv\033\[m"
+}
+
+proc echo.IBLCyan {argv} {
+  puts "\033\[3;5;36m$argv\033\[m"
+}
+
+proc echo.ISTCyan {argv} {
+  puts "\033\[3;9;36m$argv\033\[m"
+}
+
+proc echo.ULBoldCyan {argv} {
+  puts "\033\[4;1;36m$argv\033\[m"
+}
+
+proc echo.ULICyan {argv} {
+  puts "\033\[4;3;36m$argv\033\[m"
+}
+
+proc echo.ULBLCyan {argv} {
+  puts "\033\[4;5;36m$argv\033\[m"
+}
+
+proc echo.ULSTCyan {argv} {
+  puts "\033\[4;9;36m$argv\033\[m"
+}
+
+proc echo.BLBoldCyan {argv} {
+  puts "\033\[5;1;36m$argv\033\[m"
+}
+
+proc echo.BLICyan {argv} {
+  puts "\033\[5;3;36m$argv\033\[m"
+}
+
+proc echo.BLULCyan {argv} {
+  puts "\033\[5;4;36m$argv\033\[m"
+}
+
+proc echo.BLSTCyan {argv} {
+  puts "\033\[5;9;36m$argv\033\[m"
+}
+
+proc echo.STBoldCyan {argv} {
+  puts "\033\[9;1;36m$argv\033\[m"
+}
+
+proc echo.STICyan {argv} {
+  puts "\033\[9;3;36m$argv\033\[m"
+}
+
+proc echo.STULCyan {argv} {
+  puts "\033\[9;4;36m$argv\033\[m"
+}
+
+proc echo.STBLCyan {argv} {
+  puts "\033\[9;5;36m$argv\033\[m"
+}
+
+proc echo.LightCyan {argv} {
+  puts "\033\[96m$argv\033\[m"
+}
+
+proc echo.LightBoldCyan {argv} {
+  puts "\033\[1;96m$argv\033\[m"
+}
+
+proc echo.LightICyan {argv} {
+  puts "\033\[3;96m$argv\033\[m"
+}
+
+proc echo.LightULCyan {argv} {
+  puts "\033\[4;96m$argv\033\[m"
+}
+
+proc echo.LightBLCyan {argv} {
+  puts "\033\[5;96m$argv\033\[m"
+}
+
+proc echo.LightSTCyan {argv} {
+  puts "\033\[9;96m$argv\033\[m"
+}
+
+proc echo.LightBoldICyan {argv} {
+  puts "\033\[1;3;96m$argv\033\[m"
+}
+
+proc echo.LightBoldULCyan {argv} {
+  puts "\033\[1;4;96m$argv\033\[m"
+}
+
+proc echo.LightBoldBLCyan {argv} {
+  puts "\033\[1;5;96m$argv\033\[m"
+}
+
+proc echo.LightBoldSTCyan {argv} {
+  puts "\033\[1;9;96m$argv\033\[m"
+}
+
+proc echo.LightIBoldCyan {argv} {
+  puts "\033\[3;1;96m$argv\033\[m"
+}
+
+proc echo.LightIULCyan {argv} {
+  puts "\033\[3;4;96m$argv\033\[m"
+}
+
+proc echo.LightIBLCyan {argv} {
+  puts "\033\[3;5;96m$argv\033\[m"
+}
+
+proc echo.LightISTCyan {argv} {
+  puts "\033\[3;9;96m$argv\033\[m"
+}
+
+proc echo.LightULBoldCyan {argv} {
+  puts "\033\[4;1;96m$argv\033\[m"
+}
+
+proc echo.LightULICyan {argv} {
+  puts "\033\[4;3;96m$argv\033\[m"
+}
+
+proc echo.LightULBLCyan {argv} {
+  puts "\033\[4;5;96m$argv\033\[m"
+}
+
+proc echo.LightULSTCyan {argv} {
+  puts "\033\[4;9;96m$argv\033\[m"
+}
+
+proc echo.LightBLBoldCyan {argv} {
+  puts "\033\[5;1;96m$argv\033\[m"
+}
+
+proc echo.LightBLICyan {argv} {
+  puts "\033\[5;3;96m$argv\033\[m"
+}
+
+proc echo.LightBLULCyan {argv} {
+  puts "\033\[5;4;96m$argv\033\[m"
+}
+
+proc echo.LightBLSTCyan {argv} {
+  puts "\033\[5;9;96m$argv\033\[m"
+}
+
+proc echo.LightSTBoldCyan {argv} {
+  puts "\033\[9;1;96m$argv\033\[m"
+}
+
+proc echo.LightSTICyan {argv} {
+  puts "\033\[9;3;96m$argv\033\[m"
+}
+
+proc echo.LightSTULCyan {argv} {
+  puts "\033\[9;4;96m$argv\033\[m"
+}
+
+proc echo.LightSTBLCyan {argv} {
+  puts "\033\[9;5;96m$argv\033\[m"
+}
+
+proc echo.White {argv} {
+  puts "\033\[37m$argv\033\[m"
+}
+
+proc echo.BoldWhite {argv} {
+  puts "\033\[1;37m$argv\033\[m"
+}
+
+proc echo.IWhite {argv} {
+  puts "\033\[3;37m$argv\033\[m"
+}
+
+proc echo.ULWhite {argv} {
+  puts "\033\[4;37m$argv\033\[m"
+}
+
+proc echo.BLWhite {argv} {
+  puts "\033\[5;37m$argv\033\[m"
+}
+
+proc echo.STWhite {argv} {
+  puts "\033\[9;37m$argv\033\[m"
+}
+
+proc echo.BoldIWhite {argv} {
+  puts "\033\[1;3;37m$argv\033\[m"
+}
+
+proc echo.BoldULWhite {argv} {
+  puts "\033\[1;4;37m$argv\033\[m"
+}
+
+proc echo.BoldBLWhite {argv} {
+  puts "\033\[1;5;37m$argv\033\[m"
+}
+
+proc echo.BoldSTWhite {argv} {
+  puts "\033\[1;9;37m$argv\033\[m"
+}
+
+proc echo.IBoldWhite {argv} {
+  puts "\033\[3;1;37m$argv\033\[m"
+}
+
+proc echo.IULWhite {argv} {
+  puts "\033\[3;4;37m$argv\033\[m"
+}
+
+proc echo.IBLWhite {argv} {
+  puts "\033\[3;5;37m$argv\033\[m"
+}
+
+proc echo.ISTWhite {argv} {
+  puts "\033\[3;9;37m$argv\033\[m"
+}
+
+proc echo.ULBoldWhite {argv} {
+  puts "\033\[4;1;37m$argv\033\[m"
+}
+
+proc echo.ULIWhite {argv} {
+  puts "\033\[4;3;37m$argv\033\[m"
+}
+
+proc echo.ULBLWhite {argv} {
+  puts "\033\[4;5;37m$argv\033\[m"
+}
+
+proc echo.ULSTWhite {argv} {
+  puts "\033\[4;9;37m$argv\033\[m"
+}
+
+proc echo.BLBoldWhite {argv} {
+  puts "\033\[5;1;37m$argv\033\[m"
+}
+
+proc echo.BLIWhite {argv} {
+  puts "\033\[5;3;37m$argv\033\[m"
+}
+
+proc echo.BLULWhite {argv} {
+  puts "\033\[5;4;37m$argv\033\[m"
+}
+
+proc echo.BLSTWhite {argv} {
+  puts "\033\[5;9;37m$argv\033\[m"
+}
+
+proc echo.STBoldWhite {argv} {
+  puts "\033\[9;1;37m$argv\033\[m"
+}
+
+proc echo.STIWhite {argv} {
+  puts "\033\[9;3;37m$argv\033\[m"
+}
+
+proc echo.STULWhite {argv} {
+  puts "\033\[9;4;37m$argv\033\[m"
+}
+
+proc echo.STBLWhite {argv} {
+  puts "\033\[9;5;37m$argv\033\[m"
+}
+
+proc echo.LightWhite {argv} {
+  puts "\033\[97m$argv\033\[m"
+}
+
+proc echo.LightBoldWhite {argv} {
+  puts "\033\[1;97m$argv\033\[m"
+}
+
+proc echo.LightIWhite {argv} {
+  puts "\033\[3;97m$argv\033\[m"
+}
+
+proc echo.LightULWhite {argv} {
+  puts "\033\[4;97m$argv\033\[m"
+}
+
+proc echo.LightBLWhite {argv} {
+  puts "\033\[5;97m$argv\033\[m"
+}
+
+proc echo.LightSTWhite {argv} {
+  puts "\033\[9;97m$argv\033\[m"
+}
+
+proc echo.LightBoldIWhite {argv} {
+  puts "\033\[1;3;97m$argv\033\[m"
+}
+
+proc echo.LightBoldULWhite {argv} {
+  puts "\033\[1;4;97m$argv\033\[m"
+}
+
+proc echo.LightBoldBLWhite {argv} {
+  puts "\033\[1;5;97m$argv\033\[m"
+}
+
+proc echo.LightBoldSTWhite {argv} {
+  puts "\033\[1;9;97m$argv\033\[m"
+}
+
+proc echo.LightIBoldWhite {argv} {
+  puts "\033\[3;1;97m$argv\033\[m"
+}
+
+proc echo.LightIULWhite {argv} {
+  puts "\033\[3;4;97m$argv\033\[m"
+}
+
+proc echo.LightIBLWhite {argv} {
+  puts "\033\[3;5;97m$argv\033\[m"
+}
+
+proc echo.LightISTWhite {argv} {
+  puts "\033\[3;9;97m$argv\033\[m"
+}
+
+proc echo.LightULBoldWhite {argv} {
+  puts "\033\[4;1;97m$argv\033\[m"
+}
+
+proc echo.LightULIWhite {argv} {
+  puts "\033\[4;3;97m$argv\033\[m"
+}
+
+proc echo.LightULBLWhite {argv} {
+  puts "\033\[4;5;97m$argv\033\[m"
+}
+
+proc echo.LightULSTWhite {argv} {
+  puts "\033\[4;9;97m$argv\033\[m"
+}
+
+proc echo.LightBLBoldWhite {argv} {
+  puts "\033\[5;1;97m$argv\033\[m"
+}
+
+proc echo.LightBLIWhite {argv} {
+  puts "\033\[5;3;97m$argv\033\[m"
+}
+
+proc echo.LightBLULWhite {argv} {
+  puts "\033\[5;4;97m$argv\033\[m"
+}
+
+proc echo.LightBLSTWhite {argv} {
+  puts "\033\[5;9;97m$argv\033\[m"
+}
+
+proc echo.LightSTBoldWhite {argv} {
+  puts "\033\[9;1;97m$argv\033\[m"
+}
+
+proc echo.LightSTIWhite {argv} {
+  puts "\033\[9;3;97m$argv\033\[m"
+}
+
+proc echo.LightSTULWhite {argv} {
+  puts "\033\[9;4;97m$argv\033\[m"
+}
+
+proc echo.LightSTBLWhite {argv} {
+  puts "\033\[9;5;97m$argv\033\[m"
+}
+
+proc echo.Purple {argv} {
+  puts "\033\[3;38;5;93m$argv\033\[m"
+}
+
+proc echo.BoldPurple {argv} {
+  puts "\033\[1;3;38;5;93m$argv\033\[m"
+}
+
+proc echo.IPurple {argv} {
+  puts "\033\[3;3;38;5;93m$argv\033\[m"
+}
+
+proc echo.ULPurple {argv} {
+  puts "\033\[4;3;38;5;93m$argv\033\[m"
+}
+
+proc echo.BLPurple {argv} {
+  puts "\033\[5;3;38;5;93m$argv\033\[m"
+}
+
+proc echo.STPurple {argv} {
+  puts "\033\[9;3;38;5;93m$argv\033\[m"
+}
+
+proc echo.BoldIPurple {argv} {
+  puts "\033\[1;3;3;38;5;93m$argv\033\[m"
+}
+
+proc echo.BoldULPurple {argv} {
+  puts "\033\[1;4;3;38;5;93m$argv\033\[m"
+}
+
+proc echo.BoldBLPurple {argv} {
+  puts "\033\[1;5;3;38;5;93m$argv\033\[m"
+}
+
+proc echo.BoldSTPurple {argv} {
+  puts "\033\[1;9;3;38;5;93m$argv\033\[m"
+}
+
+proc echo.IBoldPurple {argv} {
+  puts "\033\[3;1;3;38;5;93m$argv\033\[m"
+}
+
+proc echo.IULPurple {argv} {
+  puts "\033\[3;4;3;38;5;93m$argv\033\[m"
+}
+
+proc echo.IBLPurple {argv} {
+  puts "\033\[3;5;3;38;5;93m$argv\033\[m"
+}
+
+proc echo.ISTPurple {argv} {
+  puts "\033\[3;9;3;38;5;93m$argv\033\[m"
+}
+
+proc echo.ULBoldPurple {argv} {
+  puts "\033\[4;1;3;38;5;93m$argv\033\[m"
+}
+
+proc echo.ULIPurple {argv} {
+  puts "\033\[4;3;3;38;5;93m$argv\033\[m"
+}
+
+proc echo.ULBLPurple {argv} {
+  puts "\033\[4;5;3;38;5;93m$argv\033\[m"
+}
+
+proc echo.ULSTPurple {argv} {
+  puts "\033\[4;9;3;38;5;93m$argv\033\[m"
+}
+
+proc echo.BLBoldPurple {argv} {
+  puts "\033\[5;1;3;38;5;93m$argv\033\[m"
+}
+
+proc echo.BLIPurple {argv} {
+  puts "\033\[5;3;3;38;5;93m$argv\033\[m"
+}
+
+proc echo.BLULPurple {argv} {
+  puts "\033\[5;4;3;38;5;93m$argv\033\[m"
+}
+
+proc echo.BLSTPurple {argv} {
+  puts "\033\[5;9;3;38;5;93m$argv\033\[m"
+}
+
+proc echo.STBoldPurple {argv} {
+  puts "\033\[9;1;3;38;5;93m$argv\033\[m"
+}
+
+proc echo.STIPurple {argv} {
+  puts "\033\[9;3;3;38;5;93m$argv\033\[m"
+}
+
+proc echo.STULPurple {argv} {
+  puts "\033\[9;4;3;38;5;93m$argv\033\[m"
+}
+
+proc echo.STBLPurple {argv} {
+  puts "\033\[9;5;3;38;5;93m$argv\033\[m"
+}
+
+proc echo.LightPurple {argv} {
+  puts "\033\[9;38;5;93m$argv\033\[m"
+}
+
+proc echo.LightBoldPurple {argv} {
+  puts "\033\[1;9;38;5;93m$argv\033\[m"
+}
+
+proc echo.LightIPurple {argv} {
+  puts "\033\[3;9;38;5;93m$argv\033\[m"
+}
+
+proc echo.LightULPurple {argv} {
+  puts "\033\[4;9;38;5;93m$argv\033\[m"
+}
+
+proc echo.LightBLPurple {argv} {
+  puts "\033\[5;9;38;5;93m$argv\033\[m"
+}
+
+proc echo.LightSTPurple {argv} {
+  puts "\033\[9;9;38;5;93m$argv\033\[m"
+}
+
+proc echo.LightBoldIPurple {argv} {
+  puts "\033\[1;3;9;38;5;93m$argv\033\[m"
+}
+
+proc echo.LightBoldULPurple {argv} {
+  puts "\033\[1;4;9;38;5;93m$argv\033\[m"
+}
+
+proc echo.LightBoldBLPurple {argv} {
+  puts "\033\[1;5;9;38;5;93m$argv\033\[m"
+}
+
+proc echo.LightBoldSTPurple {argv} {
+  puts "\033\[1;9;9;38;5;93m$argv\033\[m"
+}
+
+proc echo.LightIBoldPurple {argv} {
+  puts "\033\[3;1;9;38;5;93m$argv\033\[m"
+}
+
+proc echo.LightIULPurple {argv} {
+  puts "\033\[3;4;9;38;5;93m$argv\033\[m"
+}
+
+proc echo.LightIBLPurple {argv} {
+  puts "\033\[3;5;9;38;5;93m$argv\033\[m"
+}
+
+proc echo.LightISTPurple {argv} {
+  puts "\033\[3;9;9;38;5;93m$argv\033\[m"
+}
+
+proc echo.LightULBoldPurple {argv} {
+  puts "\033\[4;1;9;38;5;93m$argv\033\[m"
+}
+
+proc echo.LightULIPurple {argv} {
+  puts "\033\[4;3;9;38;5;93m$argv\033\[m"
+}
+
+proc echo.LightULBLPurple {argv} {
+  puts "\033\[4;5;9;38;5;93m$argv\033\[m"
+}
+
+proc echo.LightULSTPurple {argv} {
+  puts "\033\[4;9;9;38;5;93m$argv\033\[m"
+}
+
+proc echo.LightBLBoldPurple {argv} {
+  puts "\033\[5;1;9;38;5;93m$argv\033\[m"
+}
+
+proc echo.LightBLIPurple {argv} {
+  puts "\033\[5;3;9;38;5;93m$argv\033\[m"
+}
+
+proc echo.LightBLULPurple {argv} {
+  puts "\033\[5;4;9;38;5;93m$argv\033\[m"
+}
+
+proc echo.LightBLSTPurple {argv} {
+  puts "\033\[5;9;9;38;5;93m$argv\033\[m"
+}
+
+proc echo.LightSTBoldPurple {argv} {
+  puts "\033\[9;1;9;38;5;93m$argv\033\[m"
+}
+
+proc echo.LightSTIPurple {argv} {
+  puts "\033\[9;3;9;38;5;93m$argv\033\[m"
+}
+
+proc echo.LightSTULPurple {argv} {
+  puts "\033\[9;4;9;38;5;93m$argv\033\[m"
+}
+
+proc echo.LightSTBLPurple {argv} {
+  puts "\033\[9;5;9;38;5;93m$argv\033\[m"
+}
+
+proc echo.Orange {argv} {
+  puts "\033\[3;38;5;202m$argv\033\[m"
+}
+
+proc echo.BoldOrange {argv} {
+  puts "\033\[1;3;38;5;202m$argv\033\[m"
+}
+
+proc echo.IOrange {argv} {
+  puts "\033\[3;3;38;5;202m$argv\033\[m"
+}
+
+proc echo.ULOrange {argv} {
+  puts "\033\[4;3;38;5;202m$argv\033\[m"
+}
+
+proc echo.BLOrange {argv} {
+  puts "\033\[5;3;38;5;202m$argv\033\[m"
+}
+
+proc echo.STOrange {argv} {
+  puts "\033\[9;3;38;5;202m$argv\033\[m"
+}
+
+proc echo.BoldIOrange {argv} {
+  puts "\033\[1;3;3;38;5;202m$argv\033\[m"
+}
+
+proc echo.BoldULOrange {argv} {
+  puts "\033\[1;4;3;38;5;202m$argv\033\[m"
+}
+
+proc echo.BoldBLOrange {argv} {
+  puts "\033\[1;5;3;38;5;202m$argv\033\[m"
+}
+
+proc echo.BoldSTOrange {argv} {
+  puts "\033\[1;9;3;38;5;202m$argv\033\[m"
+}
+
+proc echo.IBoldOrange {argv} {
+  puts "\033\[3;1;3;38;5;202m$argv\033\[m"
+}
+
+proc echo.IULOrange {argv} {
+  puts "\033\[3;4;3;38;5;202m$argv\033\[m"
+}
+
+proc echo.IBLOrange {argv} {
+  puts "\033\[3;5;3;38;5;202m$argv\033\[m"
+}
+
+proc echo.ISTOrange {argv} {
+  puts "\033\[3;9;3;38;5;202m$argv\033\[m"
+}
+
+proc echo.ULBoldOrange {argv} {
+  puts "\033\[4;1;3;38;5;202m$argv\033\[m"
+}
+
+proc echo.ULIOrange {argv} {
+  puts "\033\[4;3;3;38;5;202m$argv\033\[m"
+}
+
+proc echo.ULBLOrange {argv} {
+  puts "\033\[4;5;3;38;5;202m$argv\033\[m"
+}
+
+proc echo.ULSTOrange {argv} {
+  puts "\033\[4;9;3;38;5;202m$argv\033\[m"
+}
+
+proc echo.BLBoldOrange {argv} {
+  puts "\033\[5;1;3;38;5;202m$argv\033\[m"
+}
+
+proc echo.BLIOrange {argv} {
+  puts "\033\[5;3;3;38;5;202m$argv\033\[m"
+}
+
+proc echo.BLULOrange {argv} {
+  puts "\033\[5;4;3;38;5;202m$argv\033\[m"
+}
+
+proc echo.BLSTOrange {argv} {
+  puts "\033\[5;9;3;38;5;202m$argv\033\[m"
+}
+
+proc echo.STBoldOrange {argv} {
+  puts "\033\[9;1;3;38;5;202m$argv\033\[m"
+}
+
+proc echo.STIOrange {argv} {
+  puts "\033\[9;3;3;38;5;202m$argv\033\[m"
+}
+
+proc echo.STULOrange {argv} {
+  puts "\033\[9;4;3;38;5;202m$argv\033\[m"
+}
+
+proc echo.STBLOrange {argv} {
+  puts "\033\[9;5;3;38;5;202m$argv\033\[m"
+}
+
+proc echo.LightOrange {argv} {
+  puts "\033\[9;38;5;202m$argv\033\[m"
+}
+
+proc echo.LightBoldOrange {argv} {
+  puts "\033\[1;9;38;5;202m$argv\033\[m"
+}
+
+proc echo.LightIOrange {argv} {
+  puts "\033\[3;9;38;5;202m$argv\033\[m"
+}
+
+proc echo.LightULOrange {argv} {
+  puts "\033\[4;9;38;5;202m$argv\033\[m"
+}
+
+proc echo.LightBLOrange {argv} {
+  puts "\033\[5;9;38;5;202m$argv\033\[m"
+}
+
+proc echo.LightSTOrange {argv} {
+  puts "\033\[9;9;38;5;202m$argv\033\[m"
+}
+
+proc echo.LightBoldIOrange {argv} {
+  puts "\033\[1;3;9;38;5;202m$argv\033\[m"
+}
+
+proc echo.LightBoldULOrange {argv} {
+  puts "\033\[1;4;9;38;5;202m$argv\033\[m"
+}
+
+proc echo.LightBoldBLOrange {argv} {
+  puts "\033\[1;5;9;38;5;202m$argv\033\[m"
+}
+
+proc echo.LightBoldSTOrange {argv} {
+  puts "\033\[1;9;9;38;5;202m$argv\033\[m"
+}
+
+proc echo.LightIBoldOrange {argv} {
+  puts "\033\[3;1;9;38;5;202m$argv\033\[m"
+}
+
+proc echo.LightIULOrange {argv} {
+  puts "\033\[3;4;9;38;5;202m$argv\033\[m"
+}
+
+proc echo.LightIBLOrange {argv} {
+  puts "\033\[3;5;9;38;5;202m$argv\033\[m"
+}
+
+proc echo.LightISTOrange {argv} {
+  puts "\033\[3;9;9;38;5;202m$argv\033\[m"
+}
+
+proc echo.LightULBoldOrange {argv} {
+  puts "\033\[4;1;9;38;5;202m$argv\033\[m"
+}
+
+proc echo.LightULIOrange {argv} {
+  puts "\033\[4;3;9;38;5;202m$argv\033\[m"
+}
+
+proc echo.LightULBLOrange {argv} {
+  puts "\033\[4;5;9;38;5;202m$argv\033\[m"
+}
+
+proc echo.LightULSTOrange {argv} {
+  puts "\033\[4;9;9;38;5;202m$argv\033\[m"
+}
+
+proc echo.LightBLBoldOrange {argv} {
+  puts "\033\[5;1;9;38;5;202m$argv\033\[m"
+}
+
+proc echo.LightBLIOrange {argv} {
+  puts "\033\[5;3;9;38;5;202m$argv\033\[m"
+}
+
+proc echo.LightBLULOrange {argv} {
+  puts "\033\[5;4;9;38;5;202m$argv\033\[m"
+}
+
+proc echo.LightBLSTOrange {argv} {
+  puts "\033\[5;9;9;38;5;202m$argv\033\[m"
+}
+
+proc echo.LightSTBoldOrange {argv} {
+  puts "\033\[9;1;9;38;5;202m$argv\033\[m"
+}
+
+proc echo.LightSTIOrange {argv} {
+  puts "\033\[9;3;9;38;5;202m$argv\033\[m"
+}
+
+proc echo.LightSTULOrange {argv} {
+  puts "\033\[9;4;9;38;5;202m$argv\033\[m"
+}
+
+proc echo.LightSTBLOrange {argv} {
+  puts "\033\[9;5;9;38;5;202m$argv\033\[m"
+}
+
+proc echo.Pink {argv} {
+  puts "\033\[3;38;5;206m$argv\033\[m"
+}
+
+proc echo.BoldPink {argv} {
+  puts "\033\[1;3;38;5;206m$argv\033\[m"
+}
+
+proc echo.IPink {argv} {
+  puts "\033\[3;3;38;5;206m$argv\033\[m"
+}
+
+proc echo.ULPink {argv} {
+  puts "\033\[4;3;38;5;206m$argv\033\[m"
+}
+
+proc echo.BLPink {argv} {
+  puts "\033\[5;3;38;5;206m$argv\033\[m"
+}
+
+proc echo.STPink {argv} {
+  puts "\033\[9;3;38;5;206m$argv\033\[m"
+}
+
+proc echo.BoldIPink {argv} {
+  puts "\033\[1;3;3;38;5;206m$argv\033\[m"
+}
+
+proc echo.BoldULPink {argv} {
+  puts "\033\[1;4;3;38;5;206m$argv\033\[m"
+}
+
+proc echo.BoldBLPink {argv} {
+  puts "\033\[1;5;3;38;5;206m$argv\033\[m"
+}
+
+proc echo.BoldSTPink {argv} {
+  puts "\033\[1;9;3;38;5;206m$argv\033\[m"
+}
+
+proc echo.IBoldPink {argv} {
+  puts "\033\[3;1;3;38;5;206m$argv\033\[m"
+}
+
+proc echo.IULPink {argv} {
+  puts "\033\[3;4;3;38;5;206m$argv\033\[m"
+}
+
+proc echo.IBLPink {argv} {
+  puts "\033\[3;5;3;38;5;206m$argv\033\[m"
+}
+
+proc echo.ISTPink {argv} {
+  puts "\033\[3;9;3;38;5;206m$argv\033\[m"
+}
+
+proc echo.ULBoldPink {argv} {
+  puts "\033\[4;1;3;38;5;206m$argv\033\[m"
+}
+
+proc echo.ULIPink {argv} {
+  puts "\033\[4;3;3;38;5;206m$argv\033\[m"
+}
+
+proc echo.ULBLPink {argv} {
+  puts "\033\[4;5;3;38;5;206m$argv\033\[m"
+}
+
+proc echo.ULSTPink {argv} {
+  puts "\033\[4;9;3;38;5;206m$argv\033\[m"
+}
+
+proc echo.BLBoldPink {argv} {
+  puts "\033\[5;1;3;38;5;206m$argv\033\[m"
+}
+
+proc echo.BLIPink {argv} {
+  puts "\033\[5;3;3;38;5;206m$argv\033\[m"
+}
+
+proc echo.BLULPink {argv} {
+  puts "\033\[5;4;3;38;5;206m$argv\033\[m"
+}
+
+proc echo.BLSTPink {argv} {
+  puts "\033\[5;9;3;38;5;206m$argv\033\[m"
+}
+
+proc echo.STBoldPink {argv} {
+  puts "\033\[9;1;3;38;5;206m$argv\033\[m"
+}
+
+proc echo.STIPink {argv} {
+  puts "\033\[9;3;3;38;5;206m$argv\033\[m"
+}
+
+proc echo.STULPink {argv} {
+  puts "\033\[9;4;3;38;5;206m$argv\033\[m"
+}
+
+proc echo.STBLPink {argv} {
+  puts "\033\[9;5;3;38;5;206m$argv\033\[m"
+}
+
+proc echo.LightPink {argv} {
+  puts "\033\[9;38;5;206m$argv\033\[m"
+}
+
+proc echo.LightBoldPink {argv} {
+  puts "\033\[1;9;38;5;206m$argv\033\[m"
+}
+
+proc echo.LightIPink {argv} {
+  puts "\033\[3;9;38;5;206m$argv\033\[m"
+}
+
+proc echo.LightULPink {argv} {
+  puts "\033\[4;9;38;5;206m$argv\033\[m"
+}
+
+proc echo.LightBLPink {argv} {
+  puts "\033\[5;9;38;5;206m$argv\033\[m"
+}
+
+proc echo.LightSTPink {argv} {
+  puts "\033\[9;9;38;5;206m$argv\033\[m"
+}
+
+proc echo.LightBoldIPink {argv} {
+  puts "\033\[1;3;9;38;5;206m$argv\033\[m"
+}
+
+proc echo.LightBoldULPink {argv} {
+  puts "\033\[1;4;9;38;5;206m$argv\033\[m"
+}
+
+proc echo.LightBoldBLPink {argv} {
+  puts "\033\[1;5;9;38;5;206m$argv\033\[m"
+}
+
+proc echo.LightBoldSTPink {argv} {
+  puts "\033\[1;9;9;38;5;206m$argv\033\[m"
+}
+
+proc echo.LightIBoldPink {argv} {
+  puts "\033\[3;1;9;38;5;206m$argv\033\[m"
+}
+
+proc echo.LightIULPink {argv} {
+  puts "\033\[3;4;9;38;5;206m$argv\033\[m"
+}
+
+proc echo.LightIBLPink {argv} {
+  puts "\033\[3;5;9;38;5;206m$argv\033\[m"
+}
+
+proc echo.LightISTPink {argv} {
+  puts "\033\[3;9;9;38;5;206m$argv\033\[m"
+}
+
+proc echo.LightULBoldPink {argv} {
+  puts "\033\[4;1;9;38;5;206m$argv\033\[m"
+}
+
+proc echo.LightULIPink {argv} {
+  puts "\033\[4;3;9;38;5;206m$argv\033\[m"
+}
+
+proc echo.LightULBLPink {argv} {
+  puts "\033\[4;5;9;38;5;206m$argv\033\[m"
+}
+
+proc echo.LightULSTPink {argv} {
+  puts "\033\[4;9;9;38;5;206m$argv\033\[m"
+}
+
+proc echo.LightBLBoldPink {argv} {
+  puts "\033\[5;1;9;38;5;206m$argv\033\[m"
+}
+
+proc echo.LightBLIPink {argv} {
+  puts "\033\[5;3;9;38;5;206m$argv\033\[m"
+}
+
+proc echo.LightBLULPink {argv} {
+  puts "\033\[5;4;9;38;5;206m$argv\033\[m"
+}
+
+proc echo.LightBLSTPink {argv} {
+  puts "\033\[5;9;9;38;5;206m$argv\033\[m"
+}
+
+proc echo.LightSTBoldPink {argv} {
+  puts "\033\[9;1;9;38;5;206m$argv\033\[m"
+}
+
+proc echo.LightSTIPink {argv} {
+  puts "\033\[9;3;9;38;5;206m$argv\033\[m"
+}
+
+proc echo.LightSTULPink {argv} {
+  puts "\033\[9;4;9;38;5;206m$argv\033\[m"
+}
+
+proc echo.LightSTBLPink {argv} {
+  puts "\033\[9;5;9;38;5;206m$argv\033\[m"
+}
+
+proc echo.Brown {argv} {
+  puts "\033\[3;38;5;52m$argv\033\[m"
+}
+
+proc echo.BoldBrown {argv} {
+  puts "\033\[1;3;38;5;52m$argv\033\[m"
+}
+
+proc echo.IBrown {argv} {
+  puts "\033\[3;3;38;5;52m$argv\033\[m"
+}
+
+proc echo.ULBrown {argv} {
+  puts "\033\[4;3;38;5;52m$argv\033\[m"
+}
+
+proc echo.BLBrown {argv} {
+  puts "\033\[5;3;38;5;52m$argv\033\[m"
+}
+
+proc echo.STBrown {argv} {
+  puts "\033\[9;3;38;5;52m$argv\033\[m"
+}
+
+proc echo.BoldIBrown {argv} {
+  puts "\033\[1;3;3;38;5;52m$argv\033\[m"
+}
+
+proc echo.BoldULBrown {argv} {
+  puts "\033\[1;4;3;38;5;52m$argv\033\[m"
+}
+
+proc echo.BoldBLBrown {argv} {
+  puts "\033\[1;5;3;38;5;52m$argv\033\[m"
+}
+
+proc echo.BoldSTBrown {argv} {
+  puts "\033\[1;9;3;38;5;52m$argv\033\[m"
+}
+
+proc echo.IBoldBrown {argv} {
+  puts "\033\[3;1;3;38;5;52m$argv\033\[m"
+}
+
+proc echo.IULBrown {argv} {
+  puts "\033\[3;4;3;38;5;52m$argv\033\[m"
+}
+
+proc echo.IBLBrown {argv} {
+  puts "\033\[3;5;3;38;5;52m$argv\033\[m"
+}
+
+proc echo.ISTBrown {argv} {
+  puts "\033\[3;9;3;38;5;52m$argv\033\[m"
+}
+
+proc echo.ULBoldBrown {argv} {
+  puts "\033\[4;1;3;38;5;52m$argv\033\[m"
+}
+
+proc echo.ULIBrown {argv} {
+  puts "\033\[4;3;3;38;5;52m$argv\033\[m"
+}
+
+proc echo.ULBLBrown {argv} {
+  puts "\033\[4;5;3;38;5;52m$argv\033\[m"
+}
+
+proc echo.ULSTBrown {argv} {
+  puts "\033\[4;9;3;38;5;52m$argv\033\[m"
+}
+
+proc echo.BLBoldBrown {argv} {
+  puts "\033\[5;1;3;38;5;52m$argv\033\[m"
+}
+
+proc echo.BLIBrown {argv} {
+  puts "\033\[5;3;3;38;5;52m$argv\033\[m"
+}
+
+proc echo.BLULBrown {argv} {
+  puts "\033\[5;4;3;38;5;52m$argv\033\[m"
+}
+
+proc echo.BLSTBrown {argv} {
+  puts "\033\[5;9;3;38;5;52m$argv\033\[m"
+}
+
+proc echo.STBoldBrown {argv} {
+  puts "\033\[9;1;3;38;5;52m$argv\033\[m"
+}
+
+proc echo.STIBrown {argv} {
+  puts "\033\[9;3;3;38;5;52m$argv\033\[m"
+}
+
+proc echo.STULBrown {argv} {
+  puts "\033\[9;4;3;38;5;52m$argv\033\[m"
+}
+
+proc echo.STBLBrown {argv} {
+  puts "\033\[9;5;3;38;5;52m$argv\033\[m"
+}
+
+proc echo.LightBrown {argv} {
+  puts "\033\[9;38;5;52m$argv\033\[m"
+}
+
+proc echo.LightBoldBrown {argv} {
+  puts "\033\[1;9;38;5;52m$argv\033\[m"
+}
+
+proc echo.LightIBrown {argv} {
+  puts "\033\[3;9;38;5;52m$argv\033\[m"
+}
+
+proc echo.LightULBrown {argv} {
+  puts "\033\[4;9;38;5;52m$argv\033\[m"
+}
+
+proc echo.LightBLBrown {argv} {
+  puts "\033\[5;9;38;5;52m$argv\033\[m"
+}
+
+proc echo.LightSTBrown {argv} {
+  puts "\033\[9;9;38;5;52m$argv\033\[m"
+}
+
+proc echo.LightBoldIBrown {argv} {
+  puts "\033\[1;3;9;38;5;52m$argv\033\[m"
+}
+
+proc echo.LightBoldULBrown {argv} {
+  puts "\033\[1;4;9;38;5;52m$argv\033\[m"
+}
+
+proc echo.LightBoldBLBrown {argv} {
+  puts "\033\[1;5;9;38;5;52m$argv\033\[m"
+}
+
+proc echo.LightBoldSTBrown {argv} {
+  puts "\033\[1;9;9;38;5;52m$argv\033\[m"
+}
+
+proc echo.LightIBoldBrown {argv} {
+  puts "\033\[3;1;9;38;5;52m$argv\033\[m"
+}
+
+proc echo.LightIULBrown {argv} {
+  puts "\033\[3;4;9;38;5;52m$argv\033\[m"
+}
+
+proc echo.LightIBLBrown {argv} {
+  puts "\033\[3;5;9;38;5;52m$argv\033\[m"
+}
+
+proc echo.LightISTBrown {argv} {
+  puts "\033\[3;9;9;38;5;52m$argv\033\[m"
+}
+
+proc echo.LightULBoldBrown {argv} {
+  puts "\033\[4;1;9;38;5;52m$argv\033\[m"
+}
+
+proc echo.LightULIBrown {argv} {
+  puts "\033\[4;3;9;38;5;52m$argv\033\[m"
+}
+
+proc echo.LightULBLBrown {argv} {
+  puts "\033\[4;5;9;38;5;52m$argv\033\[m"
+}
+
+proc echo.LightULSTBrown {argv} {
+  puts "\033\[4;9;9;38;5;52m$argv\033\[m"
+}
+
+proc echo.LightBLBoldBrown {argv} {
+  puts "\033\[5;1;9;38;5;52m$argv\033\[m"
+}
+
+proc echo.LightBLIBrown {argv} {
+  puts "\033\[5;3;9;38;5;52m$argv\033\[m"
+}
+
+proc echo.LightBLULBrown {argv} {
+  puts "\033\[5;4;9;38;5;52m$argv\033\[m"
+}
+
+proc echo.LightBLSTBrown {argv} {
+  puts "\033\[5;9;9;38;5;52m$argv\033\[m"
+}
+
+proc echo.LightSTBoldBrown {argv} {
+  puts "\033\[9;1;9;38;5;52m$argv\033\[m"
+}
+
+proc echo.LightSTIBrown {argv} {
+  puts "\033\[9;3;9;38;5;52m$argv\033\[m"
+}
+
+proc echo.LightSTULBrown {argv} {
+  puts "\033\[9;4;9;38;5;52m$argv\033\[m"
+}
+
+proc echo.LightSTBLBrown {argv} {
+  puts "\033\[9;5;9;38;5;52m$argv\033\[m"
+}
+proc echo.Rainbow {argv} {
+  if { [catch {exec which lolcat 2> /dev/null} ] == 0 } { exec echo "$argv" | lolcat -f >@ stdout } else { exec echo "$argv" >@ stdout }
+}
+proc echo.Reset {argv} {
+  exec echo $argv | tr -d \[:cntrl:\] | sed -E {s/\[((;)?[0-9]{1,3}){0,3}m//g} >@ stdout; exec echo >@ stdout
+}
