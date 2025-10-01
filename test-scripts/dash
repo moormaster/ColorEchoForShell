@@ -1,0 +1,12 @@
+#!/usr/bin/env dash
+
+set -e
+dir="$(cd "$(dirname "$_")" && pwd)"
+script="${dir}/../dist/ColorEcho.dash"
+. "${script}"
+
+grep -E "echo[a-zA-Z]+()" "${script}" | sed -e 's/()//g' -e 's/ {$//g' | while IFS= read -r x; do
+  ${x} "${x}"
+done
+
+echoReset "$( echoRed "Red and \033[32m'green'" )"

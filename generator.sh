@@ -29,7 +29,7 @@ fi
 
 echo.BoldGreen "ColorEcho generator start!"
 
-for shell in sh bash fish ksh tcsh zsh; do
+for shell in sh bash dash fish ksh tcsh zsh; do
   {
     echo.BoldYellow "Generating ColorEcho for ${shell} shell ..."
     # shell specify configs and tricks
@@ -100,7 +100,7 @@ end'
         endSym="'"
         para='\!*'
         ;;
-      "sh")
+      "sh" | "dash")
         fn=
         dot=
         # shellcheck disable=SC2016
@@ -151,7 +151,7 @@ end'
 # USA.
 SH_ECHO
 
-    if [ "${shell}" = "sh" ]; then
+    if [ "${shell}" = "sh" ] || [ "${shell}" = "dash" ]; then
       cat << SH_ECHO >> "${tempDist}"
 if [ "\$(uname)" = "FreeBSD" ]; then
   ECHO="echo -e"
